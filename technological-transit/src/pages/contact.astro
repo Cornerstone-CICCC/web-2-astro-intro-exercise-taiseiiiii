@@ -1,0 +1,61 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+
+<Header />
+
+<main>
+  <h1>Contact Us</h1>
+
+  <form>
+    <label for="name">Name:</label>
+    <input id="name" type="text" required />
+
+    <label for="email">Email:</label>
+    <input id="email" type="email" required />
+
+    <label for="message">Message:</label>
+    <textarea id="message" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      margin-bottom: 10px;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #333;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+  </style>
+</main>
+
+<Footer />
